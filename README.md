@@ -4,6 +4,8 @@
 ---
 ### **Description:**
 
+A mod to simplify overriding craft items. Overriding other types of objects may be supported in the future.
+
 
 ---
 ### **Licensing:**
