@@ -14,12 +14,11 @@
 
 --- Unregisters craft items & adds them as aliases.
 --
--- Unregister items & set names as aliases for another existing item.
+-- Unregisters items & set names as aliases for another existing item.
 --
 -- @function override.replaceItems
--- @local
--- @param items
--- @param target
+-- @param items List of item names to be overridden (can be string for single item override).
+-- @param target Item name of aliases' target.
 function override.replaceItems(items, target)
 	if type(items) == 'string' then
 		override.logDebug('Overriding item "' .. items .. '" with "' .. target .. '"')
@@ -36,13 +35,13 @@ function override.replaceItems(items, target)
 end
 
 
---- Unregisters craft items & adds them as aliases to new item.
+--- Unregisters craft items & registers names as aliases for new item.
 --
 -- Registers a new craft item & adds overridden item names as aliases.
 --
 -- @function override.overrideItems
 -- @tparam string name Name of new item.
--- @tparam table def New item definition.
+-- @tparam table def Item definition.
 -- @see override.overrideItems.def
 function override.overrideItems(name, def)
 	local overrides = def.overrides

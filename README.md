@@ -9,7 +9,8 @@ A mod to simplify overriding craft items. Overriding other types of objects may 
 
 ---
 ### **Licensing:**
-MIT (see: [LICENSE.txt](LICENSE.txt))
+
+- [MIT](LICENSE.txt)
 
 
 ---
