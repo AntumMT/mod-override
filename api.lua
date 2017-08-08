@@ -47,8 +47,8 @@ function override.overrideItems(name, def)
 	local overrides = def.overrides
 	def.overrides = nil
 	
-	core.register_craftitem(name, def)
 	override.replaceItems(overrides, name)
+	core.register_craftitem(name, def)
 end
 
 --- Item definition table for *override.overrideItems*
