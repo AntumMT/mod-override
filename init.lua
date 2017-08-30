@@ -32,7 +32,7 @@ local o_list = nil
 local o_path = core.get_worldpath() .. '/overrides.txt'
 local o_file = io.open(o_path, 'r')
 if o_file then
-	o_list = o_file:read()
+	o_list = o_file:read('*a')
 	o_file:close()
 else
 	-- Create empty overrides file
